@@ -17,7 +17,7 @@ within the container:
 
 ```sh
 # The image size is currently 1.131 GB, so go grab a coffee while Docker downloads it
-docker pull fgrehm/eclipse:v8.0.1
+docker pull fgrehm/eclipse:v4.4.1
 L=$HOME/bin/eclipse && curl -sL https://github.com/fgrehm/docker-eclipse/raw/master/eclipse > $L && chmod +x $L
 cd /path/to/java/project
 eclipse
@@ -41,7 +41,7 @@ docker run -ti --rm \
            -v /tmp/.X11-unix:/tmp/.X11-unix \
            -v `pwd`/.eclipse-docker:/home/developer \
            -v `pwd`:/workspace \
-           fgrehm/eclipse:v8.0.1
+           fgrehm/eclipse:v4.4.1
 ```
 
 ## Help! I started the container but I don't see the Eclipse screen
